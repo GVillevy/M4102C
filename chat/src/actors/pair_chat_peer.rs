@@ -20,11 +20,14 @@ impl PairChatPeer {
 
 impl Listener for PairChatPeer {
     fn listen(&self) -> Result<()>{
+
         let mut buf = [0 ; BUFFER_SIZE];
-        while let Ok((nb_bytes, sender_endpoint)) = self.socket.recv_from(&mut buf) {
+
+        while let Ok((nb_bytes, _sender_endpoint)) = self.socket.recv_from(&mut buf) {
             let my_message = str::from_utf8(&buf[0..nb_bytes])?;
             println!("{:?}", my_message);
         }
+        
         return Ok(())
     }
 }
