@@ -1,0 +1,1 @@
+D:\Documents\Travail\année2\S4\M4102C\target\debug\libchat.rlib: D:\Documents\Travail\année2\S4\M4102C\chat\src\actors\pair_chat_peer.rs D:\Documents\Travail\année2\S4\M4102C\chat\src\actors.rs D:\Documents\Travail\année2\S4\M4102C\chat\src\lib.rs
